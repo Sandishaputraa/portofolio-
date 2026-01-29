@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # 📱 Portfolio Website 
 
 Website portfolio pertama yang dibuat 100% dari Android menggunakan Acode Editor!
@@ -28,4 +27,3 @@ https://sandishaputraa.github.io/portfolio-/
 ## 📞 Kontak
 - GitHub: [@Sandishaputraa](https://github.com/Sandishaputraa)
 ---
-EOF
