@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Sandi Shaputra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Loading CSS -->
+  <style>
+    #pageLoader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient-1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Loading Screen -->
+  <div id="pageLoader">
+    <div class="loader-spinner"></div>
+  </div>
+
+<header class="navbar">
+  <div class="nav-left">
+    <img src="profile.jpg" alt="Profile" class="logo">
+    <span class="logo-name">Sandi Shaputra</span>
+  </div>
+
+  <!-- MENU TENGAH -->
+  <nav class="nav-center nav-menu">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-user"></i> About</a>
+    <a href="services.html" class="active"><i class="fas fa-cog"></i> Services</a>
+    <a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="icon" id="themeToggle">
+      <i class="fas fa-moon"></i>
+    </div>
+    <div class="icon hamburger">☰</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="services-header">
+    <h1 class="fade-in">My <span class="highlight">Services</span></h1>
+    <p class="fade-in delay-1">Layanan yang saya tawarkan untuk membantu project Anda 🚀</p>
+  </div>
+
+  <!-- GRID SERVICES -->
+  <div class="services-grid">
+
+    <div class="service-card fade-in">
+      <div class="service-icon">
+        <i class="fas fa-code"></i>
+      </div>
+      <h3>Frontend Web Development</h3>
+      <p>Membangun website modern, responsive, dan interaktif dengan teknologi terkini. Fokus pada performa dan user experience.</p>
+      <div class="service-tech">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>React</span>
+      </div>
+      <a href="contact.html" class="service-btn">Request Service</a>
+    </div>
+
+    <div class="service-card fade-in delay-1">
+      <div class="service-icon">
+        <i class="fab fa-android"></i>
+      </div>
+      <h3>Android Tweaks & Customization</h3>
+      <p>Custom ROM, kernel optimization, system modification, dan performance tuning untuk pengalaman Android terbaik.</p>
+      <div class="service-tech">
+        <span>ADB</span>
+        <span>Root</span>
+        <span>Magisk</span>
+        <span>Custom ROM</span>
+      </div>
+      <a href="contact.html" class="service-btn">Consult Now</a>
+    </div>
+
+    <div class="service-card fade-in delay-2">
+      <div class="service-icon">
+        <i class="fas fa-paint-brush"></i>
+      </div>
+      <h3>UI/UX Design</h3>
+      <p>Design antarmuka yang user-friendly, modern, dan sesuai kebutuhan pengguna. Dari wireframe sampai prototype interaktif.</p>
+      <div class="service-tech">
+        <span>Figma</span>
+        <span>Adobe XD</span>
+        <span>Wireframing</span>
+        <span>Prototyping</span>
+      </div>
+      <a href="contact.html" class="service-btn">Get Design</a>
+    </div>
+
+    <div class="service-card fade-in delay-3">
+      <div class="service-icon">
+        <i class="fas fa-robot"></i>
+      </div>
+      <h3>Automation & Bots</h3>
+      <p>Membuat bot WhatsApp, Telegram, dan automasi tugas untuk meningkatkan produktivitas bisnis dan personal.</p>
+      <div class="service-tech">
+        <span>Node.js</span>
+        <span>Python</span>
+        <span>APIs</span>
+        <span>Automation</span>
+      </div>
+      <a href="contact.html" class="service-btn">Build Bot</a>
+    </div>
+
+    <div class="service-card fade-in delay-1">
+      <div class="service-icon">
+        <i class="fas fa-mobile-alt"></i>
+      </div>
+      <h3>Mobile App Development</h3>
+      <p>Pengembangan aplikasi mobile Android dengan performa optimal, UX yang baik, dan fitur lengkap.</p>
+      <div class="service-tech">
+        <span>Kotlin</span>
+        <span>Flutter</span>
+        <span>Java</span>
+        <span>Firebase</span>
+      </div>
+      <a href="contact.html" class="service-btn">Start Project</a>
+    </div>
+
+    <div class="service-card fade-in delay-2">
+      <div class="service-icon">
+        <i class="fas fa-tools"></i>
+      </div>
+      <h3>Technical Consultation</h3>
+      <p>Konsultasi teknis untuk project web/mobile, troubleshooting, code review, dan optimization.</p>
+      <div class="service-tech">
+        <span>Consulting</span>
+        <span>Code Review</span>
+        <span>Optimization</span>
+        <span>Mentoring</span>
+      </div>
+      <a href="contact.html" class="service-btn">Schedule Call</a>
+    </div>
+
+  </div>
+  
+  <!-- PRICING/CTA -->
+  <div class="pricing-section fade-in delay-3">
+    <h2>Flexible Pricing Options</h2>
+    <p>Pilih paket yang sesuai dengan kebutuhan Anda</p>
+    
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3>Basic</h3>
+        <div class="price">Rp 500k<span>/project</span></div>
+        <ul>
+          <li><i class="fas fa-check"></i> Website Sederhana</li>
+          <li><i class="fas fa-check"></i> Responsive Design</li>
+          <li><i class="fas fa-check"></i> 3 Revisi</li>
+          <li><i class="fas fa-check"></i> Support 1 Bulan</li>
+        </ul>
+        <a href="contact.html" class="btn outline">Choose Basic</a>
+      </div>
+      
+      <div class="pricing-card popular">
+        <div class="popular-badge">Most Popular</div>
+        <h3>Professional</h3>
+        <div class="price">Rp 1.5JT<span>/project</span></div>
+        <ul>
+          <li><i class="fas fa-check"></i> Website + Admin Panel</li>
+          <li><i class="fas fa-check"></i> Database Integration</li>
+          <li><i class="fas fa-check"></i> Unlimited Revisi</li>
+          <li><i class="fas fa-check"></i> Support 3 Bulan</li>
+          <li><i class="fas fa-check"></i> SEO Basic</li>
+        </ul>
+        <a href="contact.html" class="btn primary">Choose Professional</a>
+      </div>
+      
+      <div class="pricing-card">
+        <h3>Custom</h3>
+        <div class="price">Custom</div>
+        <ul>
+          <li><i class="fas fa-check"></i> Sesuai Kebutuhan</li>
+          <li><i class="fas fa-check"></i> Full Stack Development</li>
+          <li><i class="fas fa-check"></i> Mobile App</li>
+          <li><i class="fas fa-check"></i> Maintenance Included</li>
+        </ul>
+        <a href="contact.html" class="btn outline">Discuss Project</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- FAQ -->
+  <div class="faq-section fade-in delay-2">
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+      <button class="faq-question">
+        Berapa lama pengerjaan project?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Tergantung kompleksitas project. Website sederhana: 3-7 hari. Project kompleks: 2-4 minggu. Timeline akan dibahas detail saat konsultasi awal.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">
+        Apakah bisa revisi setelah project selesai?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Ya, setiap paket memiliki jumlah revisi yang berbeda. Untuk paket Professional, revisi tidak terbatas selama dalam scope awal project.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">
+        Bagaimana proses pembayaran?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Pembayaran 50% di awal, 50% setelah project selesai. Bisa via transfer bank, e-wallet, atau cryptocurrency.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="profile.jpg" alt="Sandi" class="footer-logo">
+        <h3>Sandi Shaputra</h3>
+        <p>Frontend Developer & Android Tweaker</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <div class="footer-social">
+        <h4>Connect With Me</h4>
+        <div class="social-icons">
+          <a href="https://t.me/secreet_00" target="_blank"><i class="fab fa-telegram"></i></a>
+          <a href="https://github.com/Sandishaputraa" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:zenxelies@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span class="current-year">2024</span> Sandi Shaputra. All rights reserved.</p>
+      <p>Built with <i class="fas fa-heart" style="color: #e74c3c;"></i> and lots of coffee <i class="fas fa-coffee"></i></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

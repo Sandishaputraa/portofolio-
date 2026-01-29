@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Sandi Shaputra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-left">
+    <img src="profile.jpg" alt="Profile" class="logo">
+    <span class="logo-name">Sandi Shaputra</span>
+  </div>
+
+  <!-- MENU TENGAH -->
+  <nav class="nav-center nav-menu">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-user"></i> About</a>
+    <a href="services.html"><i class="fas fa-cog"></i> Services</a>
+    <a href="portfolio.html" class="active"><i class="fas fa-briefcase"></i> Portfolio</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="icon" id="themeToggle">
+      <i class="fas fa-moon"></i>
+    </div>
+    <div class="icon hamburger">☰</div>
+  </div>
+</header>
+
+<!-- HEADER PORTFOLIO -->
+<section class="portfolio-header">
+  <div class="container">
+    <div class="header-content">
+      <h1 class="fade-in">My <span class="highlight">Portfolio</span></h1>
+      <p class="fade-in delay-1">Koleksi project terbaik yang telah saya kerjakan 💻</p>
+      <div class="filter-tags fade-in delay-2">
+        <span class="filter-btn active" data-filter="all">All</span>
+        <span class="filter-btn" data-filter="web">Web</span>
+        <span class="filter-btn" data-filter="mobile">Mobile</span>
+        <span class="filter-btn" data-filter="design">Design</span>
+        <span class="filter-btn" data-filter="tools">Tools</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO GRID -->
+<div class="container">
+  <div class="portfolio-grid">
+    
+    <!-- PROJECT 1 - Ganti URL gambar -->
+<div class="portfolio-card" data-category="web">
+  <div class="card-image">
+    <!-- GUNAKAN URL YANG LEBIH STABIL -->
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+         alt="Web Portfolio"
+         loading="lazy">
+    <div class="overlay">
+      <a href="#" class="view-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      <a href="#" class="view-btn github"><i class="fab fa-github"></i> Code</a>
+    </div>
+  </div>
+  <div class="card-content">
+    <h3>Personal Portfolio</h3>
+    <p>Website portfolio modern dengan glassmorphism design dan dark mode</p>
+    <div class="tech-tags">
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>Responsive</span>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT 2 - Android Tweaks -->
+<div class="portfolio-card" data-category="mobile tools">
+  <div class="card-image">
+    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+         alt="Android Development"
+         loading="lazy">
+    <div class="overlay">
+      <a href="#" class="view-btn"><i class="fab fa-android"></i> View Details</a>
+    </div>
+  </div>
+  <div class="card-content">
+    <h3>Android Tweaks Tool</h3>
+    <p>Custom Android optimization tools & performance tweaks</p>
+    <div class="tech-tags">
+      <span>Android</span>
+      <span>Kotlin</span>
+      <span>ADB</span>
+      <span>Root</span>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT 3 - WhatsApp Bot (PERBAIKI JUDUL) -->
+<div class="portfolio-card" data-category="tools">
+  <div class="card-image">
+    <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+         alt="WhatsApp Bot"
+         loading="lazy">
+    <div class="overlay">
+      <a href="#" class="view-btn"><i class="fab fa-whatsapp"></i> Test Bot</a>
+      <a href="#" class="view-btn github"><i class="fab fa-github"></i> Source</a>
+    </div>
+  </div>
+  <div class="card-content">
+    <h3>WhatsApp Automation Bot</h3> <!-- PERBAIKI TYPO -->
+    <p>Bot untuk automasi pesan, reminder, dan integrasi API</p>
+    <div class="tech-tags">
+      <span>Node.js</span>
+      <span>WhatsApp API</span>
+      <span>MongoDB</span>
+      <span>Automation</span>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT 4 - UI Design -->
+<div class="portfolio-card" data-category="design">
+  <div class="card-image">
+    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+         alt="UI Design"
+         loading="lazy">
+    <div class="overlay">
+      <a href="#" class="view-btn"><i class="fas fa-palette"></i> View Design</a>
+    </div>
+  </div>
+  <div class="card-content">
+    <h3>Modern UI Design System</h3>
+    <p>Design system komprehensif untuk aplikasi mobile & web</p>
+    <div class="tech-tags">
+      <span>Figma</span>
+      <span>UI/UX</span>
+      <span>Prototyping</span>
+      <span>Design System</span>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT 5 - Dashboard -->
+<div class="portfolio-card" data-category="web">
+  <div class="card-image">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+         alt="Analytics Dashboard"
+         loading="lazy">
+    <div class="overlay">
+      <a href="#" class="view-btn"><i class="fas fa-chart-line"></i> Demo</a>
+    </div>
+  </div>
+  <div class="card-content">
+    <h3>Analytics Dashboard</h3>
+    <p>Dashboard real-time dengan chart dan data visualization</p>
+    <div class="tech-tags">
+      <span>React</span>
+      <span>Chart.js</span>
+      <span>REST API</span>
+      <span>Dashboard</span>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT 6 - Mobile App -->
+<div class="portfolio-card" data-category="mobile">
+  <div class="card-image">
+    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+         alt="Mobile App"
+         loading="lazy">
+    <div class="overlay">
+      <a href="#" class="view-btn"><i class="fas fa-mobile-alt"></i> Download</a>
+    </div>
+  </div>
+  <div class="card-content">
+    <h3>Productivity Mobile App</h3>
+    <p>Aplikasi produktivitas dengan task management & timer</p>
+    <div class="tech-tags">
+      <span>Flutter</span>
+      <span>Dart</span>
+      <span>Firebase</span>
+      <span>Mobile</span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- STATS SECTION -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <i class="fas fa-project-diagram"></i>
+        <h3>12+</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-users"></i>
+        <h3>8</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-code"></i>
+        <h3>50k+</h3>
+        <p>Lines of Code</p>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-clock"></i>
+        <h3>2+</h3>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Sandi Shaputra. All rights reserved.</p>
+    <p>Built with <i class="fas fa-heart" style="color: #e74c3c;"></i> and lots of coffee <i class="fas fa-coffee"></i></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sandi Shaputra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- contact.html - Perbaikan Header Section -->
+<header class="navbar">
+  <div class="nav-left">
+    <img src="profile.jpg" alt="Profile" class="logo">
+    <span class="logo-name">Sandi Shaputra</span>
+  </div>
+
+  <!-- MENU TENGAH - PASTIKAN TERLIHAT -->
+  <nav class="nav-center nav-menu">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-user"></i> About</a>
+    <a href="services.html"><i class="fas fa-cog"></i> Services</a>
+    <a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a>
+    <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="icon" id="themeToggle">
+      <i class="fas fa-moon"></i>
+    </div>
+    <div class="icon hamburger">☰</div>
+  </div>
+</header>
+
+<div class="container contact">
+  <h1>Contact</h1>
+
+  <div class="card">
+    <h2>Masukan Anda</h2>
+    <p style="opacity:.7;margin:8px 0 16px">
+      Tulis saran, kritik, atau pesan kamu di sini 👇
+    </p>
+
+    <form id="contactForm" action="https://formspree.io/f/xrekzvbo" method="POST">
+      <!-- INPUT NAMA -->
+      <div class="form-group">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required>
+      </div>
+      
+      <!-- INPUT EMAIL -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="contoh@gmail.com" required>
+      </div>
+      
+      <!-- INPUT SUBJECT (TAMBAH BARU) -->
+      <div class="form-group">
+        <label for="subject">Subjek</label>
+        <input type="text" id="subject" name="subject" placeholder="Apa yang ingin dibahas?" required>
+      </div>
+      
+      <!-- TEXTAREA PESAN -->
+      <div class="form-group">
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" placeholder="Tulis pesan kamu di sini..." rows="5" required></textarea>
+      </div>
+
+      <!-- SUBMIT BUTTON -->
+      <button type="submit" class="btn primary">
+        <i class="fas fa-paper-plane"></i> Kirim Pesan
+      </button>
+    </form>
+
+    <!-- STATUS MESSAGE -->
+    <div id="statusMsg" class="status-message"></div>
+
+    <!-- CONTACT LINKS -->
+    <div class="contact-links-section">
+      <h3 style="margin-top: 40px; margin-bottom: 20px; text-align: center;">
+        Atau hubungi saya melalui:
+      </h3>
+      
+      <div class="contact-links">
+        <a href="https://t.me/secreet_00" target="_blank" class="contact-link">
+          <i class="fab fa-telegram"></i>
+          <span>Telegram</span>
+        </a>
+
+        <a href="https://github.com/Sandishaputraa" target="_blank" class="contact-link">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+
+        <a href="mailto:zenxelies@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        
+        <a href="https://wa.me/6283181514489" target="_blank" class="contact-link">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
