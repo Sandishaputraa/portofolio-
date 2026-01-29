@@ -3,7 +3,7 @@
 Website portfolio pertama yang dibuat 100% dari Android menggunakan Acode Editor!
 
 ## 🌐 Live Demo
-https://sandishaputraa.github.io/portfolio-/
+https://github.com/Sandishaputraa/portofolio-.git
 
 ## 📄 Halaman
 - **Beranda** - index.html
